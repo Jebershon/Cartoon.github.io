@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Responsive</title>
+    <style>
+        .container{
+              justify-content: center;
+        }
+        .align{
+            width: 18rem; 
+            display: inline-block; 
+            padding: 2em;
+            margin: 3em;
+        }
+        img{
+            width: 5cm;
+            height: 5cm;
+        }
+        .card:hover{
+            transform: scale(1.1);
+            color: rgb(34, 11, 90);
+            background-color: burlywood;
+        }
+        .card{
+            color: #032b48;
+            background-color: cyan;
+        }
+        .head{
+         color: #032b48;
+         background-color: cyan;
+         text-align: center;
+         border-top:#032b48;
+         text-transform: capitalize;
+        }
+        .btn:hover{
+            background-color: #032b48;
+            color: cyan;
+        }
+        h2{
+            background-color: black;
+            color: burlywood;
+        }
+        img:hover{
+            transform: scaleY(1);
+        }
+        .gud{
+        color: cyan;
+         justify-content: center;
+         background-color: #032b48; 
+        }
+
+body{
+  padding:100px 0;
+  background-color:black;
+}
+
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    animation: heartbeat 1s infinite;
+    margin:0 auto
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: cyan;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h2>90's Famous Cartoons</h2>
+        </div>
+    </header>
+    <div class="container">  
+     
+    <div class="card align h-80">
+        <img class="card-img-top" src="Asserts/courage.jpg"></img>
+        <h4 class="card-title font"><marquee>Courage the Cowardly Dog</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Courage is a timid pink dog with paranoia problems. His owners are an old couple living on a farm full of bizarre adversaries. Courage must overcome his fear and help save his owners, Eustace and Muriel, from ghosts and paranormal spirits living on the farm.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Courage_the_Cowardly_Dog" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=mBINH0DHhPY&list=PLMb1cIJIlFjhF9kssGRX3SAJ3bC3F22MU" class="btn btn-info">Youtube</a>
+    </div>
+     
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/doremon.jpg"></img>
+        <h4 class="card-title"><marquee>Doraemon</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Doraemon has a four-dimensional pouch in which he stores tools, inventions, and gadgets from the future to aid Nobita whenever he is faced with a problem. Although Doraemon is a cat robot, he has a fear of mice because of an incident where robotic mice chewed off his ears.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Doraemon" class="btn btn-info">wikipedia</a>
+        <a href="  https://www.youtube.com/watch?v=cRFjE2Lg9eE&pp=ygUOZG9yZWFtb24gdGFtaWw%3D" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/shinchan.png"></img>
+        <h4 class="card-title"><marquee>Shin-chan</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Shinnosuke Nohara (野原しんのすけ), also known as Shinchan or just Shin, is the titular main protagonist of Crayon Shin-chan. He is the son of Hiroshi and Misae. His nickname is "Shin-chan" and he is Himawari's brother. A kindergarten-aged boy whose antics are the basis for the series.</p>
+        </div>
+        <br>
+        <a href="https://crayonshinchan.fandom.com/wiki/Shinnosuke_Nohara" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=A1nyMbhzij8" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/pokemon.jpg"></img>
+        <h4 class="card-title"><marquee>Pokémon</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>In 1997 Pokémon was turned into an animated TV series in Japan. It followed the story of a boy named Satoshi (named after Satoshi Tajiri himself), as he set off on a journey to try to become a Pokémon master with his companion, Pikachu</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon" class="btn btn-info">wikipedia</a>
+        <a href="" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/kiteratsu.jpg"></img>
+        <h4 class="card-title"><marquee>Kiteretsu</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>The series is the story of a scientific inventor boy genius named Eiichi Kite, a.k.a. Kiteretsu, a descendant of a great inventor named D. Kiteretsu Saisama, who has built a companion robot named Korosuke.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Kiteretsu_Daihyakka" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=EeLfV2MIiDw" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/ninja.jpg"></img>
+        <h4 class="card-title"><marquee>Ninja Hattori</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Hattori-kun, is the protagonist of the series, a little ninja who is named after his ancestor Hattori Hanzō. He is 11 years old and a skilled ninja despite his age who left his home in Iga to train in Tokyo, where he took up residence in the Mitsuba household.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Ninja_Hattori-kun" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=Qv92u3qg068" class="btn btn-info">Youtube</a>
+    </div>
+
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/teentitans.jpg"></img>
+        <h4 class="card-title"><marquee>Teen Titans Go!</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Teen Titans Go! is an animated series that follows the adventures of the young Titans: Beast Boy, Robin, Cyborg, Raven and Starfire. They reside in Jump City when they are not saving the world while living together as teenagers without adults who disrupt the young Titans.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Teen_Titans_Go!" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=FdVuyRMNRn0" class="btn btn-info">Youtube</a>
+    </div>
+
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/robomonkey.jpg"></img>
+        <h4 class="card-title"><marquee>Super Robot Monkey Team Hyperforce Go!</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>A twelve-year-old boy named Chiro was exploring the outskirts of Shuggazoom City and discovered a giant and abandoned Super Robot.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Super_Robot_Monkey_Team_Hyperforce_Go!" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=U0Zi4TXzah0" class="btn btn-info">Youtube</a>
+    </div>
+
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/ferb.jpg"></img>
+        <h4 class="card-title"><marquee>Phineas and Ferb</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>The show follows the adventures of stepbrothers Phineas Flynn and Ferb Fletcher, who are between eight and ten years old. They live in the fictional city of Danville in an unspecified tri-state area, as they seek ways to occupy their time during their "104 days of summer vacation".</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Phineas_and_Ferb" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=VHR-q3GnJDA" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/ben.jpg"></img>
+        <h4 class="card-title"><marquee>Ben 10</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>The series centers on Ben Tennyson, a 10-year-old boy on a summer vacation road trip with his cousin Gwen and their grandfather Max, who is later revealed to be a member of a secret intergalactic organization called the Plumbers.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Ben_10" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=_EC8v__BkAg" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/danger.jpg"></img>
+        <h4 class="card-title"><marquee>Creepschool</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Welcome to the school where your fears and nightmares become a hilariously creepy reality! Ghouls in the classroom! Elsa, Josh and the other kids have personal dilemmas and everyday problems just like the rest of us<p>
+        </div>
+        <br>
+        <a href="https://www.imdb.com/title/tt0383759/plotsummary/?ref_=tt_ov_pl" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=_EC8v__BkAg" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/gloria.jpg"></img>
+        <h4 class="card-title"><marquee>Gloria's House</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Gloria's House is the messiest house in a street full of perfect homes but it's a lot more fun than any of the other squeaky clean places in Chillsville.</p>
+        </div>
+        <br>
+        <a href="imdb.com/title/tt0819152/" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=qQpX6IGO7B8" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/bean.jpg"></img>
+        <h4 class="card-title"><marquee>The Grim Adventures of Billy & Mandy</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p> It follows Billy, an extremely dimwitted, happy-go-lucky boy, and Mandy, a cynical, remorseless girl, who, after winning a limbo game to save Billy's pet hamster, gain Grim, the mighty Grim Reaper, as their "best friend forever". </p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/The_Grim_Adventures_of_Billy_%26_Mandy#:~:text=It%20follows%20Billy%2C%20an%20extremely,their%20%22best%20friend%20forever%22." class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=MGX400LDfVU" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/jessy.jpg"></img>
+        <h4 class="card-title"><marquee>Crazy Jessy</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Crazy Jessy was a children's animated series that ran on Chutti TV. The series was a Tamil dubbed version of the original Australian series 'Tracy McBean. </p>
+        </div>
+        <br>
+        <a href="https://www.youtube.com/watch?v=9G0JL4paO2g" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=sIegjPTASiI" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/Johnny.jpg"></img>
+        <h4 class="card-title"><marquee>Johnny Test</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Johnny Test is an animated television series created by Scott Fellows, originally produced in the United States by Warner Bros.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Johnny_Test" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=SifHi_L5n4o" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/kick.jpg"></img>
+        <h4 class="card-title"><marquee>Kick Buttowski: Suburban Daredevil</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Main. Clarence Francis "Kick" Buttowski: a 10-year-old amateur, thrill-seeking often reckless daredevil. His main goal out of life is to embrace each day as if it were his own personal "action movie".</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Kick_Buttowski:_Suburban_Daredevil#:~:text=Animation%20Magazine-,Main,own%20personal%20%22action%20movie%22." class="btn btn-info">wikipedia</a>
+        <a href="https://www.dailymotion.com/video/x8c70nz" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/kidvs.jpg"></img>
+        <h4 class="card-title"><marquee>kid vs kat</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>It's about a boy named Coop who battles with his little sister's (Millie) cat named Kat.</p>
+        </div>
+        <br>
+        <a href="https://kidvskat.fandom.com/wiki/Kid_vs._Kat#:~:text=It's%20about%20a%20boy%20named,two%20seasons%20and%2052%20episodes." class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=tn4-6wQ1LmE" class="btn btn-info">Youtube</a>   
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/magic.jpg"></img>
+        <h4 class="card-title"><marquee>Shaka Laka Magic Slate</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Plays for children presented on this 30 minute series shown on alternate Fridays in 1950, and alternate Sunday afternoons in 1951.</p>
+        </div>
+        <br>
+        <a href="https://www.imdb.com/title/tt0439079/" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=nhjNTtSjj34" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/boom.jpeg"></img>
+        <h4 class="card-title"><marquee>Shaka Laka Boom Boom</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Shaka Laka Boom Boom is an Indian television series. It was written and directed by Vijay Krishna Acharya.[4] Merchandise based on the series were also launched in markets.[5]</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Shaka_Laka_Boom_Boom" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=eVupAeEN0H8" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/oggy.jpg"></img>
+        <h4 class="card-title"><marquee>Oggy and the Cockroaches</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p> Oggy, an anthropomorphic cat, would prefer to spend his days watching television and eating but is continually pestered by three roaches: Joey, Marky and Dee Dee</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Oggy_and_the_Cockroaches#:~:text=11%20External%20links-,Synopsis,the%20train%20he%20just%20boarded." class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=x9UXV2X-KzU" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/Scooby.jpeg"></img>
+        <h4 class="card-title"><marquee>Mr. Bean: The Animated Series</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>is an American media franchise based on an animated television series launched in 1969 and continued through several derivative media.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Scooby-Doo" class="btn btn-info">wikipedia</a>
+        <a href="" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/tom.jpg"></img>
+        <h4 class="card-title"><marquee>Tom and Jerry</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p> an American cartoon series about a hapless cat's never-ending pursuit of a clever mouse.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Tom_and_Jerry" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=0adzmfQ_R1I" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/wonderland.jpg"></img>
+        <h4 class="card-title"><marquee>Magic Wonderland</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>A baby princess named Ocean is sent away from the North Pole by her mother because of the tyranny of the magma dragon who controls the volcano.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Magic_Wonderland" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=60ONcbGPO78&pp=ygUdd29uZGVybGFuZCBjaHV0dGkgdHYgaW4gdGFtaWw%3D" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/heidi.jpg"></img>
+        <h4 class="card-title"><marquee>Heidi</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p> The title character is a young orphan who is sent to the Swiss mountains to live with her grandfather.</p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Heidi" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=b0zwdzFPjMc" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/tales.jpg"></img>
+        <h4 class="card-title"><marquee>Anna's Tales</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Anna's Story" a collection of stories from the TV series of countries, and show how rich culture folklore. These can be as fun and educational stories </p>
+        </div>
+        <br>
+        <a href="https://paul-marciano.fandom.com/wiki/Anna%27s_Tales" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=ANB7tRXkACA" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/rain.jpg"></img>
+        <h4 class="card-title"><marquee>Master Raindrop</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Master Raindrop is an animated television program produced jointly by Australian, New Zealand and Singaporean companies that first screened </p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Master_Raindrop" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=JIOWR4IyIdA" class="btn btn-info">Youtube</a>
+    </div>
+
+    <div  class="card align h-80">
+        <img class="card-img-top" src="Asserts/jackie.jpg"></img>
+        <h4 class="card-title"><marquee>Jackie Chan Adventures</marquee></h4>
+        <div style="width: 5cm; height: 3cm;" class="card-text overflow-y-scroll">
+        <p>Jackie Chan Adventures is a Chinese-American animated television series chronicling the adventures of a fictionalized version of action film star Jackie Chan. </p>
+        </div>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Jackie_Chan_Adventures" class="btn btn-info">wikipedia</a>
+        <a href="https://www.youtube.com/watch?v=sROU3oCoN3M" class="btn btn-info">Youtube</a>   
+    </div>
+    <div id="heart"></div>
+<footer>
+    <div class="gud">
+    <p>
+        <h6>
+            &copy;&nbsp;<a href="https://www.bing.com/ck/a?!&&p=21eb372b9a557a35JmltdHM9MTY5MTM2NjQwMCZpZ3VpZD0wY2MyZDc1MS0xNGU5LTZmMTEtMjdiMS1jNWQwMTBlOTY5YmYmaW5zaWQ9NTIwOA&ptn=3&hsh=3&fclid=0cc2d751-14e9-6f11-27b1-c5d010e969bf&psq=copy+rights&u=a1aHR0cHM6Ly93d3cuY29weXJpZ2h0Lmdvdi5pbi8&ntb=1" style="text-decoration: none; color: aqua;">2023 J Jebershon Vetha Singh</a>
+        </h6>
+    </p>
+    </div>
+</footer>
+</div>
+</body>
+</html>
